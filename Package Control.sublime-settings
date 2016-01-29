@@ -1,0 +1,18 @@
+{
+	"bootstrapped": true,
+	"in_process_packages":
+	[
+	],
+	"installed_packages":
+	[
+		"All Autocomplete",
+		"Delete Lines",
+		"Git",
+		"Github Tools",
+		"Package Control",
+		"Switch View in Group",
+		"SyncedSideBar",
+		"Unity3D Shader Highlighter and Snippets",
+		"VCS Gutter"
+	]
+}

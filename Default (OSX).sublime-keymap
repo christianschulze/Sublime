@@ -1,0 +1,57 @@
+[
+	// navigate
+	{ "keys": ["super+j"], "command": "move", "args": {"by": "words", "forward": false} },
+	{ "keys": ["super+l"], "command": "move", "args": {"by": "word_ends", "forward": true} },
+	{ "keys": ["ctrl+super+j"], "command": "move", "args": {"by": "characters", "forward": false} },
+	{ "keys": ["ctrl+super+l"], "command": "move", "args": {"by": "characters", "forward": true} },
+	{ "keys": ["super+i"], "command": "move", "args": {"by": "lines", "forward": false} },
+	{ "keys": ["super+k"], "command": "move", "args": {"by": "lines", "forward": true} },
+
+	// select 
+	{ "keys": ["shift+super+j"], "command": "move", "args": {"by": "words", "forward": false, "extend" : true} },
+	{ "keys": ["shift+super+l"], "command": "move", "args": {"by": "word_ends", "forward": true, "extend" : true} },
+	{ "keys": ["shift+ctrl+super+j"], "command": "move", "args": {"by": "characters", "forward": false, "extend" : true} },
+	{ "keys": ["shift+ctrl+super+l"], "command": "move", "args": {"by": "characters", "forward": true, "extend" : true} },
+	{ "keys": ["shift+super+i"], "command": "move", "args": {"by": "lines", "forward": false, "extend" : true} },
+	{ "keys": ["shift+super+k"], "command": "move", "args": {"by": "lines", "forward": true, "extend" : true} },
+
+	// Jump and select by page
+	{ "keys": ["ctrl+super+i"], "command": "move", "args": {"by": "pages", "forward": false} },
+	{ "keys": ["ctrl+super+k"], "command": "move", "args": {"by": "pages", "forward": true} },
+	{ "keys": ["shift+ctrl+super+i"], "command": "move", "args": {"by": "pages", "forward": false, "extend": true} },
+	{ "keys": ["shift+ctrl+super+k"], "command": "move", "args": {"by": "pages", "forward": true, "extend": true} },
+
+	// Move to start and end of line
+	{ "keys": ["super+u"], "command": "move_to", "args": {"to": "bol", "extend": false} },
+	{ "keys": ["super+o"], "command": "move_to", "args": {"to": "eol", "extend": false} },
+	{ "keys": ["shift+super+u"], "command": "move_to", "args": {"to": "bol", "extend": true} },
+	{ "keys": ["shift+super+o"], "command": "move_to", "args": {"to": "eol", "extend": true} },
+	{ "keys": ["ctrl+super+u"], "command": "move_to", "args": {"to": "bof", "extend": false} },
+	{ "keys": ["ctrl+super+o"], "command": "move_to", "args": {"to": "eof", "extend": false} },
+	{ "keys": ["shift+ctrl+super+h"], "command": "move_to", "args": {"to": "bof", "extend": true} },
+	{ "keys": ["shift+ctrl+super+o"], "command": "move_to", "args": {"to": "eof", "extend": true} },
+
+	// Custom editing
+	{ "keys": ["ctrl+d"], "command": "find_under_expand" },
+	{ "keys": ["super+g"], "command": "show_overlay", "args": {"overlay": "goto", "text": ":"} },
+	{ "keys": ["ctrl+super+m"], "command": "toggle_minimap" },
+	{ "keys": ["ctrl+j"], "command": "join_lines" },
+
+	// panel handling
+	{ "keys": ["super+]"], "command": "next_view_in_pane" },
+	{ "keys": ["super+["], "command": "prev_view_in_pane" },
+    { "keys": ["ctrl+super+shift+["], "command": "move_to_group", "args": { "group": 0 } },
+    { "keys": ["ctrl+super+shift+]"], "command": "move_to_group", "args": { "group": 1 } },
+
+	{ "keys": ["ctrl+super+]"], "command": "indent" },
+	{ "keys": ["ctrl+super+["], "command": "unindent" },
+	{ "keys": ["shift+super+]"], "command": "next_group" },
+	{ "keys": ["shift+super+["], "command": "prev_group" },
+	{ "keys": ["ctrl+super+tab"], "command": "next_group" },
+	{ "keys": ["ctrl+super+shift+tab"], "command": "prev_group" },
+
+	{ "keys": ["super+d"], "command": "delete_lines" },
+	{ "keys": ["ctrl+shift+l"], "command": "split_selection_into_lines" },
+	{ "keys": ["shift+super+ctrl+a"], "command": "alignment" }
+	// plugins
+]
