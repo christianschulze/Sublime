@@ -10,14 +10,15 @@
 		"Vintage"
 	],
 	"open_files_in_new_window": false,
+	"rulers":
+	[
+		80
+	],
 	"scroll_past_end": true,
 	"show_encoding": true,
 	"show_full_path": true,
 	"trim_trailing_white_space_on_save": true,
 	"wide_caret": true,
-
-	// Word wrapping - follow PEP 8 recommendations
-    "rulers": [ 112, 120 ],
-    "word_wrap": true,
-    "wrap_width": 120
+	"word_wrap": true,
+	"wrap_width": 80
 }
